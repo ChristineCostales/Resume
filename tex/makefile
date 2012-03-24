@@ -7,5 +7,5 @@ clean:
 	rm *.ps
 pdf:  
 	latex christine.tex
-	dvipdf christine.dvi christine_temple_resume.pdf
+	dvipdf christine.dvi christine_costales_resume.pdf
 

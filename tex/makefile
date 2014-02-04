@@ -1,3 +1,8 @@
+SHELL=/bin/bash
+
+date:
+	echo $(today)
+
 clean:
 	touch a.dvi a.log a.aux a.pdf a.ps
 	rm *.dvi
@@ -7,5 +12,5 @@ clean:
 	rm *.ps
 pdf:  
 	latex christine.tex
-	dvipdf christine.dvi christine_costales_resume.pdf
+	dvipdf christine.dvi christine_costales_resume_$(shell date "+%Y%m%d").pdf
 
